@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.absolutePadding
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -64,6 +65,7 @@ fun NoteScreen(
     ){ innerPadding ->
         Column(
             modifier = Modifier
+                .absolutePadding(8.dp, 8.dp, 8.dp, 8.dp)
                 .fillMaxSize()
                 .padding(innerPadding)
         ) {
